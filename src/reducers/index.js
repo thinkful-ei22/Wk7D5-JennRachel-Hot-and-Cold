@@ -1,8 +1,10 @@
-// import {combineReducers } from 'redux'
-// //import other reducers here
+import {combineReducers } from 'redux';
+import {submitGuessReducer} from './submitGuessReducer';
+import {restartGameReducer} from './restartGameReducer';
+import {auralUpdateReducer} from './auralUpdateReducer';
 
-// const gameReducer = combineReducers({
-//   //enter reducers from above here
-// })
+const gameReducer = combineReducers({
+  submitGuessReducer, restartGameReducer, auralUpdateReducer
+});
 
-// export default gameReducer
+export default gameReducer;
